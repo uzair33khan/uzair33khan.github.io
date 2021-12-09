@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="image/j.jpg" rel="icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="css/gallery.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a class="active" href="gallery.html">Gallery</a></li>
+    <li><a href="timeTable.html">Academic</a></li>
+    <li class="topnav-right"><a href="feedback.html">Feedback</a></li>
+  </ul>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Photo Gallery</h2>
+    <hr style="width:100px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="image/1.jpg" style="width:100%">
+        <video width="100%" controls>
+          <source src="image/1.mp4" type="video/mp4">
+        </video>
+        <img src="image/2.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="image/3.JPG" style="width:100%">
+        <img src="image/4.jpg" style="width:100%">
+        <img src="image/5.jpg" style="width:100%">
+        <video width="100%" controls>
+          <source src="image/2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- End photo grid -->
+    </div>
+    <!-- End Portfolio Section -->
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="music">
+    <h2 class="w3-text-light-grey">Music Gallery</h2>
+    <hr style="width:100px" class="w3-opacity">
+
+    <div align="center">
+      <audio id="myMusic" controls loop>
+        <source src="audio/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="myMusic1" controls loop>
+        <source src="audio/song1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      <audio id="myMusic2" controls loop>
+        <source src="audio/song2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+
+      <p class="w3-text-light-grey">Click the buttons to get info and set the volume of the audio player.</p>
+
+      <button class="button button2" onclick="setHalfVolume()" type="button">Set volume to 15%</button>
+      <button class="button button3" onclick="setFullVolume()" type="button">Set volume to 100%</button>
+    </div>
+
+    <script src="js/adjust-volume.js"></script>
+
+  </div>
+
+  <!-- Technical skills -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h3 class="w3-text-light-grey">Technical Skills</h3>
+    <hr style="width:100px" class="w3-opacity">
+    <img src="image/cam.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Mobilegraphy</span> Adobe Photoshop</p>
+    <p>Lightroom</p><br>
+    <img src="image/vid.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Videography</span> Adobe Premiere</p>
+    <p>Sony Vegas</p>
+    <!-- End Tech Skill Section -->
+
+
+
+    <!-- END PAGE CONTENT -->
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="image/j.jpg" rel="icon">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <!-- header section starts  -->
+    <header>
+
+        <a href="#" class="logo"> <span>johan</span> uzair </a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="timeTable.html">Academic</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+        <div class="follow">
+            <a href="https://www.facebook.com/ronaldo" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/ronaldo" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/ronaldo/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/ronaldo" target="_blank" class="fab fa-linkedin"></a>
+        </div>
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+
+        <div class="content">
+
+            <p class="info"><em>software &amp; web developers</em></p>
+            <h3> i am <span> johan uzair </span> </h3>
+            <p class="text">Hii all, introducing my website about the information that you can retrieve before you
+                continue the research about suitable requirement to apply with me! </p>
+            <a href="portfolio.html" class="btn">about me</a>
+        </div>
+
+        <div class="image">
+            <img src="image/home-img.png" alt="">
+        </div>
+
+    </section>
+    <!-- home section ends -->
+
+
+    <!-- footer section  -->
+    <footer class="footer"> created by <span> mr. johan uzair </span> | all rights reserved! </footer>
+
+
+    <!-- custom js file link  -->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let header = document.querySelector('header');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        }
+
+        let cursor1 = document.querySelector('.cursor-1');
+        let cursor2 = document.querySelector('.cursor-2');
+
+        window.onmousemove = (e) => {
+            cursor1.style.top = e.pageY + 'px';
+            cursor1.style.left = e.pageX + 'px';
+            cursor2.style.top = e.pageY + 'px';
+            cursor2.style.left = e.pageX + 'px';
+        }
+
+        document.querySelectorAll('a').forEach(links => {
+
+            links.onmouseenter = () => {
+                cursor1.classList.add('active');
+                cursor2.classList.add('active');
+            }
+
+            links.onmouseleave = () => {
+                cursor1.classList.remove('active');
+                cursor2.classList.remove('active');
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

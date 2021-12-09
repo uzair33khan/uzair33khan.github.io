@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link href="image/j.jpg" rel="icon">
+  <link rel="stylesheet" href="css/feedback.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="js/feedback.js"></script>
+</head>
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="timeTable.html">Academic</a></li>
+    <li class="topnav-right active"><a href="feedback.html">Feedback</a></li>
+  </ul>
+
+
+  <div class="body">
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">UITM Cendering</div>
+            <div class="text-two">Kuala Terengganu</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+609-6216600</div>
+            <div class="text-two">+6019-2171111</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">email@uitm.edu.my</div>
+            <div class="text-two">email@example.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send me a feedback</div>
+          <p>If you have any enqueries on how to improve my website, you are pleased to send the message from here. It's
+            my pleasure to help you.</p>
+          <form name="contact-form" action="#">
+            <div class="input-box">
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <input type="text" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box message-box">
+              <input type="textarea" id="message" placeholder="Enter your message">
+            </div>
+            <div class="button">
+              <input type="submit" value="Send Now" onclick="submitForm()">
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
